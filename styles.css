@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color:#191511;
+   background-image: url("https://www.transparenttextures.com/patterns/black-paper.png");
+    overflow: hidden;
+}
+
+#menu {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Special Elite', sans-serif ;
+    font-size: 16px;
+    color: #ECE8E5;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: all 1s ease-in;
+    opacity: 0;
+}
+
+.menu {
+    padding: 5px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+    line-height: auto;
+    padding: 10px;
+}
+
+.menu a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a:hover {
+    cursor:pointer;
+    border: 1.5px solid rgba(236, 232, 229, .3);
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+}
+
+
+
+.title {
+    width: 80vw;
+    text-align: center;
+    border-bottom: 2px solid #ECE8E5;
+}
+
+
+h2 {
+    font-family: 'Special Elite', sans-serif ;
+    font-size: 4vw;
+    color: #ECE8E5;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 18vmin;
+    color: #ECE8E5;
+    padding: 4vmin;
+}
+
+#blur {
+  -webkit-animation: blur 2s 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@-webkit-keyframes blur {
+  0%  { -webkit-filter: blur(0px); }
+100% { -webkit-filter: blur(6px); }
+}
+
+@media only screen and (min-width: 768px) {
+#blur {
+        @-webkit-keyframes blur {
+  0%, 50%  { -webkit-filter: blur(0px); }
+100% { -webkit-filter: blur(10px); }
+    }        
+}
+    #menu {
+            flex-direction: row;
+        font-size: 24px;
+        }
+}

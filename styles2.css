@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color:#191511;
+   background-image: url("https://www.transparenttextures.com/patterns/black-paper.png");
+}
+
+#menu {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Special Elite', sans-serif ;
+    font-size: 16px;
+    color: #ECE8E5;
+    padding: 10px;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.menu {
+    padding: 5px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+    line-height: auto;
+    padding: 10px;
+}
+
+.menu a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a:hover {
+    cursor:pointer;
+    border: 1.5px solid rgba(236, 232, 229, .3);
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+}
+
+
+
+.title {
+    padding: 0;
+    margin: 0;
+    width: 90vw;
+    text-align: center;
+    border-bottom: 2px solid #ECE8E5;
+}
+
+
+h2 {
+    font-family: 'Special Elite', sans-serif ;
+    font-size: 20px;
+    color: #ECE8E5;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 18vmin;
+    color: #ECE8E5;
+}
+
+h3 {
+    font-family: 'Libre Baskerville', serif;
+    color: #191511;
+    font-size: 24px;
+}
+
+article {
+    background-color: #ECE8E5;
+    text-align: left;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Libre Baskerville', serif;
+    opacity: 0;
+    transition: .3s ease-in;
+}
+
+.headings {
+    font-style: italic;
+    border-bottom: 1px solid #191511;
+    padding-bottom: 10px;
+}
+
+.references {
+    font-size: 20px;
+    padding-top: 40px;
+    opacity: .5;
+}
+
+.biblio {
+    font-size: 16px;
+    padding-top: 20px;
+    opacity: .5;
+}
+
+.main {
+    padding-top: 20px;
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery {
+    padding-bottom: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    max-width:100%;
+}
+
+video {
+    max-width: 100%;
+}
+
+footer {
+    background-color:#191511;
+   background-image: url("https://www.transparenttextures.com/patterns/black-paper.png");
+    font-family: 'Special Elite', sans-serif ; 
+    color: rgba(236, 232, 229, .3);
+    text-align: right;
+    font-size: 2vw;
+    padding-top: 10px;
+}
+
+#blur {
+  -webkit-animation: blur 2s 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@-webkit-keyframes blur {
+  0%  { -webkit-filter: blur(0px); }
+100% { -webkit-filter: blur(6px); }
+}
+
+@media only screen and (min-width: 768px) {
+#blur {
+        @-webkit-keyframes blur {
+  0%, 50%  { -webkit-filter: blur(0px); }
+100% { -webkit-filter: blur(10px); }
+    }        
+}
+    #menu {
+            flex-direction: row;
+        font-size: 24px;
+        }
+}
